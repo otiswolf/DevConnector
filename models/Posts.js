@@ -31,7 +31,7 @@ const PostSchema = new Schema({
             ref: 'users'
             },
             text: {
-                String,
+                type: String,
                 required: true
             },
             avatar: {
@@ -50,4 +50,4 @@ const PostSchema = new Schema({
 
 })
 
-module.exports = Post = mongoose.model('post', Post)
+module.exports = Post = mongoose.model('post', PostSchema)
